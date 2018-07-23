@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="surveyform.css">
+    </head>
+
+    <body>
+        <h1 id="title">Survey Form</h1>
+
+        <form id="survey-form" class="form" action="#" method="post">
+            <p id="description">Let us know how we can improve freeCodeCamp</p>
+            <div class="generic-row">
+                <label id="name-label" class="label" for="name">* Name:</label>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="generic-row">
+                <label id="email-label" for="email">* Email:</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="generic-row">
+                <label id="number-label" for="age">* Age:</label>
+                <input id="number" type="number" name="age" placeholder="Age" min="1" max="200" required>
+            </div>
+
+            <div class="generic-row">
+                <label for="profession">Which option best describes your current role?</label>
+                <select id="dropdown" class="" name="profession">
+                        <option value="none" disabled selected>Select an option</option>
+                        <option>Student</option>
+                        <option>Full time learner</option>
+                        <option>Full time job</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                    </select>
+            </div>
+
+            <div class="generic-row">
+                <label for="recommendation">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <ul>
+                    <li><label>Definitely<input type="radio" name="recommendation" value="Definitely"></label></li>
+                    <li><label>Maybe<input type="radio" name="recommendation" value="Maybe"></label></li>
+                    <li><label>Not sure<input type="radio" name="recommendation" value="Not sure"></label></li>
+                </ul>
+            </div>
+
+            <div class="generic-row">
+                <label for="favourite">What do you like most in FCC:</label>
+                <select name="favourite">
+                        <option value="none" disabled selected>Select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select>
+            </div>
+
+            <div class="generic-row">
+                <label for="improvements">Things that should be improved in the future(Check all that apply):</label>
+                <ul>
+                    <li><label><input type="checkbox" value="Front-end Projects">Front-end Projects</label></li>
+                    <li><label><input type="checkbox" value="Back-end Projects">Back-end Projects</label></li>
+                    <li><label><input type="checkbox" value="Data Visualization">Data Visualization</label></li>
+                    <li><label><input type="checkbox" value="Challenges">Challenges</label></li>
+                    <li><label><input type="checkbox" value="Open Source Community">Open Source Community</label></li>
+                    <li><label><input type="checkbox" value="Gitter help rooms">Gitter help rooms</label></li>
+                    <li><label><input type="checkbox" value="Videos">Videos</label></li>
+                    <li><label><input type="checkbox" value="City Meetups">City Meetups</label></li>
+                    <li><label><input type="checkbox" value="Wiki">Wiki</label></li>
+                    <li><label><input type="checkbox" value="Forum">Forum</label></li>
+                    <li><label><input type="checkbox" value="Additional Courses">Additional Courses</label></li>
+                </ul>
+            </div>
+
+            <div class="generic-row">
+                <label for="suggestions"> Any Comments or Suggestions?</label>
+                <textarea name="suggestions" rows="8" cols="40"></textarea>
+            </div>
+
+            <div class="generic-row buttons">
+                <button id="submit" class="form-buttons" type="submit" name="submit">Submit</button>
+                <input id="reset" class="form-buttons" type="reset" name="reset">
+            </div>
+        </form>
+
+    </body>
+
+</html>

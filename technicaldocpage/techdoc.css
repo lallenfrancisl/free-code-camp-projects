@@ -1,0 +1,153 @@
+html, body {
+    min-width: 290px;
+    color: black;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+hr {
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    margin: 3em 0 3em 0;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    box-shadow: 9px 0px 29px -2px #8F8F93;
+    color: black;
+}
+
+#navbar header {
+    background-color: #f0db4e;
+    margin: 0;
+}
+
+header {
+    color: black;
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
+.headings {
+    background-color: #f0db4e;
+    padding: 0 0.5em 0 1em;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+    text-decoration: underline dashed #f0db4e;
+}
+
+#navbar ul {
+    height: 88%;
+    overflow-y: visible;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+#navbar li {
+    padding: 8px;
+    padding-left: 45px;
+    list-style: none;
+    position: relative;
+    left: -50px;
+    width: 100%;
+}
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+#top {
+    margin-top: 0;
+}
+
+section article {
+    color: black;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    color: green;
+    position: relative;
+    box-shadow: -1px 10px 20px -8px #A3A8A3;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+        height: 207px;
+    }
+    #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+    #main-doc section {
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}

@@ -1,0 +1,81 @@
+body {
+  background: #F9FAC3;
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5%;
+    text-align: left
+}
+
+input {
+    margin-right: 5%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    float: left;
+    margin-left: 5%;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 40%;
+    height: 2.5em;
+}
+
+
+label {
+    align-self: flex-start;
+    margin-right: 2%;
+    width: 32%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.generic-row {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 10%;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+.buttons {
+    justify-content: space-between;
+}
+
+
+.form {
+    margin: 4% 15%;
+    background-color: white;
+    border-radius: 1%;
+    position: relative;
+    box-shadow: 0px 0px 14px 1px #B0B7B5;
+    padding: 2% 0;
+}
+
+#submit {
+    color: white;
+    border: 0;
+    height: 3em;
+    border-radius: 10%;
+    background-color: darkgreen;
+}
+
+#reset {
+    color: white;
+    border: 0;
+    height: 3em;
+    border-radius: 10%;
+    background-color: red;
+}
